@@ -1,0 +1,47 @@
+
+.box {
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+   backdrop-filter: blur(20.0px);
+   -webkit-backdrop-filter: blur(3.0px);
+   border: 1px solid rgba(255, 255, 255, 0.10);
+   border-radius: 3px; 
+}
+
+/* .box:hover {
+   background:rgba(255, 255, 255, 0.50);
+   border: 1px solid rgba(255, 255, 255, 0.80);
+} */
+
+/* Alkaline Metal & Metalloid */
+.alkali-metal,
+.metalloid {
+   background: #af463d;
+}
+
+/* Alkaline Earth, Non Metal & Actinides*/
+.alkaline-earth,
+.non-metals,
+.actinides  {
+   background: #496ea3;
+}
+
+/* Transition Metals */
+.transition-metals {
+   background: #ddb8c7;
+}
+
+/* Post Transition */
+.post-transition-metals {
+   background: #b1dde988;
+}
+
+/* Hallogen */
+.halogen {
+   background: #501555;
+}
+
+/* Noble Gas & Lanthanides */
+.noble-gas,
+.lanthanides {
+   background: #214d18;
+}

@@ -1,0 +1,169 @@
+/* Color code */
+:root {
+   --bg-primary: linear-gradient(to bottom, #1f6475,  #b49fc2);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 0.7rem;
+   color: #fff;
+   background-image: var(--bg-primary);
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.head {
+   display: flex;
+   align-items: center;
+   margin: 1.5rem 0 0;
+}
+
+.head a {
+   margin: 0 0.5rem;
+   font-size: 1rem;
+   color: #7a7771;
+}
+
+h1 {
+   font-weight: 600;
+   font-size: 35px;
+   margin-top: 25px;
+}
+
+
+
+.number {
+   font-size: 0.7rem;
+   font-weight: 100;
+}
+
+.symbol {
+   font-size: 1.1rem;
+   font-weight: 600;
+}
+
+.element {
+   font-size: 0.56rem;
+   font-weight: 900;
+}
+
+.group {
+   font-size: 0.6rem;
+   font-weight: 600;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: repeat(18, 70px);
+   grid-auto-rows: minmax(10px, auto);
+   grid-gap: 0.2rem;
+   padding: 1rem 0;
+}
+
+.box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   padding: 0.65rem;
+}
+
+/* Grid spans and positions */
+.box:first-child {
+   grid-column: 1;
+}
+
+.box:nth-child(2) {
+   grid-column: 18;
+}
+
+.box:nth-child(5) {
+   grid-column: 13;
+}
+
+.box:nth-child(12) {
+   grid-column: 2;
+}
+
+.box:nth-child(13) {
+   grid-column: 13;
+}
+
+/* Responsive */
+@media(max-width: 1350px) {
+   .container {
+      grid-template-columns: repeat(18, 60px);
+   }
+
+   .box {
+      overflow-x: hidden;
+   }
+}
+
+@media(max-width: 1230px) {
+   .box:nth-child(2) {
+      grid-column: 2;
+   }
+}
+
+@media(max-width: 1150px) {
+   .container {
+      grid-template-columns: repeat(10, 70px);
+   }
+
+   .box:nth-child(5) {
+      grid-column: 5;
+   }
+
+   .box:nth-child(10) {
+      grid-column: 10;
+   }
+
+   .box:nth-child(11) {
+      grid-row: 2;
+      grid-column: 1;
+   }
+
+   .box:nth-child(13) {
+      grid-row: 2;
+      grid-column: 3;
+   }
+}
+
+@media(max-width: 800px) {
+   .container {
+      grid-template-columns: repeat(5, 70px);
+   }
+
+   .box:nth-child(5) {
+      grid-row: 1;
+   }
+
+   .box:nth-child(10) {
+      grid-column: 5;
+      grid-row: 2;
+   }
+
+   .box:nth-child(11) {
+      grid-row: 3;
+      grid-column: 1;
+   }
+
+   .box:nth-child(13) {
+      grid-row: 3;
+      grid-column: 3;
+   }
+}
