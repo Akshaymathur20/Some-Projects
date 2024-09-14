@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+   <h2>Regular Expression</h2>
+    <h3>JavaScript String Methods</h3>
+
+    <button onclick="myFunction()">Check</button>
+    <p id="demo">Please Visit Microsoft!</p>
+
+
+    
+    <script src="index.js"></script>
+    <h3>A global search for the character "a" in a string</h3>
+    <!-- <button onclick="myFunction1()">Check</button> -->
+    <p id="demo"></p>
+    <script>
+       let text = " Madhya Pradesh is called heart of India";
+        let pattern = /[a]/g;
+        let result = text.match(pattern);
+        
+        document.getElementById("demo").innerHTML = result;
+        </script>
+</body>
+</html>
